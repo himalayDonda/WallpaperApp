@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WallpaperApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/theme_black</item>
+        <item name="colorPrimaryVariant">@color/theme_green</item>
+        <item name="colorOnPrimary">@color/theme_green</item>
+        <item name="android:statusBarColor">@color/theme_black</item>
+        <item name="fontFamily">@font/play</item>
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/play</item>
+    </style>
+
+    <style name="Theme.WallpaperApp.Fullscreen" parent="Theme.WallpaperApp">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:actionBarStyle">@style/Widget.Theme.WallpaperApp.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@drawable/main_background</item>
+    </style>
+
+    <style name="ThemeOverlay.WallpaperApp.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+</resources>

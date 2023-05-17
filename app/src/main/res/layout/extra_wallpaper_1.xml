@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="false"
+        app:cardBackgroundColor="@color/theme_black_light"
+        app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/tmp_wallpaper"
+                android:id="@+id/img"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/img"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Game Wallapaer"
+                android:id="@+id/categoryName"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:fontFamily="@font/play_bold"
+                app:fontFamily="@font/play_bold"
+                android:textColor="@color/white_70"
+                android:textSize="18sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/categoryName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/download"
+                android:text="Game Wallapaer sau n sadjd dnksand jd as"
+                android:id="@+id/catergoryDesc"
+                android:paddingTop="5dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingBottom="30dp"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/download"
+                android:src="@drawable/download_icon"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/catergoryDesc"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

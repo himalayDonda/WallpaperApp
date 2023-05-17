@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WallpaperApp</string>
+    <string name="title_activity_tmp">TmpAct</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_1">NOTES</string>
+    <string name="tab_2">FOCUS LIST</string>
+    <string name="tab_3">GOALS</string>
+    <string-array name="tabs">
+        <item>Notes</item>
+        <item>Focus List</item>
+        <item>Goals</item>
+    </string-array>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

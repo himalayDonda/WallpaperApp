@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        tools:context=".ui.activity.Onboarding">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/layCarausal"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/layText">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layText"
+            app:layout_constraintTop_toBottomOf="@id/layCarausal"
+            app:layout_constraintBottom_toTopOf="@id/swipeLay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you like our app?"
+                android:paddingHorizontal="15dp"
+                android:id="@+id/categoryName"
+                android:paddingVertical="8dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:text="Game Wallapaer sau n sadjd dnksand jd a fvfdgn fdojgn  fd djkbf fxs bodsi bfvbsfs bjsdf s"
+                android:textAlignment="center"
+                android:textColor="@color/white_70"
+                android:textSize="18sp"
+                android:id="@+id/catergoryDesc"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/swipeLay"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/swipe_background"
+            app:layout_constraintTop_toBottomOf="@id/layText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.6"
+            >
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
